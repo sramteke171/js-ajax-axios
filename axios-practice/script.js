@@ -1,15 +1,10 @@
-/* eslint-disable no-console */
-// eslint-disable-next-line func-names
 window.onload = function () {
   const randomDogUrl = 'https://dog.ceo/api/breeds/image/random';
   const listAllBreedsUrl = 'https://dog.ceo/api/breeds/list/all';
-  // const getBreedPicUrl = `https://dog.ceo/api/breed/${breed}/images`;
   const dogImageTag = document.querySelector('#dogImage');
 
-  const getRandomDogButton = document.createElement('button');
-  getRandomDogButton.innerText = 'Get Random Dog!';
+  const getRandomDogButton = document.querySelector('#getRandomDogButton');
   getRandomDogButton.addEventListener('click', getRandomDogHandler);
-  document.querySelector('h1').append(getRandomDogButton);
 
   function getRandomDogHandler() {
     axios({
@@ -29,11 +24,9 @@ window.onload = function () {
       method: 'get',
     })
       .then((response) => {
-        let dogBreedImage = ''
         let dogBreeds = Object.keys(response.data.message);
         createSelectTags(dogBreeds);
       })
-      // eslint-disable-next-line arrow-parens
       .catch(error => console.log(error))
       .finally(() => console.log('finally!'));
   }
