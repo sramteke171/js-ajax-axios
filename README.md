@@ -213,7 +213,7 @@ axios({
   method: 'get',
 })
 .then() // .then wants a function to run if the request is succesful
-.catch() // .catch wants a function to run if the request is succesful
+.catch() // .catch wants a function to run if the request fails
 ```
 
 The `.then` and `.catch` method want us to pass them functions to run.
