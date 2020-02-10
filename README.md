@@ -1,9 +1,5 @@
 # AJAX + Axios
 
-## We're gonna build this today:
-
-[GH Pages](https://pages.git.generalassemb.ly/Interapt/lesson-w04d03-ajax-axios/axios-practice/index.html)
-
 ## HTTP Recap
 
 Let's define a few terms:
