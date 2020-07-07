@@ -112,10 +112,9 @@ AJAX is a misleading name. AJAX applications might use XML to transport data, bu
 
 AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
 
-Let's take a look at a few sites that use AJAX:
+Let's take a look at a site that uses AJAX:
 
 - https://www.google.com/maps
-- https://docs.google.com/spreadsheets/d/1wAtHJh3lMwQxfZ3Uqtow6KNd06h2OSJJ0mXH0b-R6Xo/edit
 
 What would happen if we disabled javascript and tried to use those sites?
 
